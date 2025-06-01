@@ -1,33 +1,60 @@
-body{
-    text-align: center;
-    border: 1px solid black;
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Dark blue gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+    perspective: 1000px;
+}
+
+h1 {
+    text-shadow: 2px 2px 8px #000;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 10px;
+    border: none;
     border-radius: 10px;
-    padding: 120px 40px;
-    font-family: Courier;
-    background-color: black;
-    color:aliceblue;
+    width: 200px;
+    font-size: 20px;
+    margin: 10px 0;
 }
-#submit{
-    width: 120px;
-    height: 20px;
-    border-radius: 20px;
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
     background-color: black;
-    color:aliceblue;
+    transition: 0.3s;
 }
-#restart{
-    width: 120px;
-    height: 20px;
-    border-radius: 20px;
-    background-color: black;
-    color:aliceblue;
+
+button:hover {
+    transform: scale(1.1) rotateX(10deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
-#number{
-    width: 300px;
-    height: 20px;
-    border-radius: 20px;
-    background-color: black;
-    color:aliceblue;
-}
-p{
-    color:aliceblue;
+
+#output {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
 }
