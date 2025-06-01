@@ -15,10 +15,10 @@ let attempts = 0;
      else{
         attempts++;
      if(guess<ans){
-        message.textContent=`got very low value`;
+        message.textContent=`Bad luck! You hit the bottom!`;
      }
      else if(guess>ans){
-        message.textContent=`got very high value`;
+        message.textContent=`You rolled high!`;
      }
      else{
         message.textContent=`you got the correct value`
